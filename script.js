@@ -12,6 +12,7 @@ const $footer = document.getElementById('footer');
 
 
 
+
 //header and footer text
 $header.innerHTML = 'Image Gallery';
 $footer.innerHTML += '&copy 2021 Ben Grant';
