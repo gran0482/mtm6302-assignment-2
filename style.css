@@ -49,3 +49,18 @@ table {
 /* -------------------
 	Custom Styles
 ---------------------*/
+.header-footer{
+	background-color: #788AA3;
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+    height: 25px;
+    padding: 10px;
+}
+#header{
+    font-size: 2rem;
+    padding: 20px 0 0 35px;
+}
+
+#container{
+	background-color: #F5F5F5;
+}
