@@ -13,9 +13,11 @@ const $images = ['images/butterfly.jpg', 'images/geese.jpg','images/trail.jpg', 
 //Run
 
 
-// for (let i=0; i < 12; i++) {
-  
-// }
+
+for (let i=0; i < $images.length; i++) {
+
+  console.log($images[i]);    
+}
 
 
 //header and footer text
