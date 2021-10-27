@@ -64,10 +64,11 @@ table {
 #container{
 	background-color: #F5F5F5;
 }
-.images{
-	height: 250px;
-	width: 250px;
+#imageGallery{
+	height: 200px;
+	width: 200px;
 	object-fit: cover;
+	padding: 20px 0 20px 35px;
 }
 #footer{
 	text-align: center;
