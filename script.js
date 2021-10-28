@@ -27,7 +27,7 @@ const $images = [
 //reveal details about the image on hover(shot types)
 $hover.addEventListener('mouseover', function(){
   $hover.setAttribute(
-      $hover.innerHTML = 'image gallery',
+    'style', 'background-color: red'
   )
 })
 
@@ -40,10 +40,12 @@ $hover.addEventListener('mouseout', function (){
 
 //Showing a larger version of the image
 $button1.addEventListener('click', function(event){
+  'style', 'height: 275px';
   console.log('button is working')
 })
 
 $button2.addEventListener('click', function(event){
+  'style', 'height: 200px';
   console.log('button 2 is working')
 })
 
