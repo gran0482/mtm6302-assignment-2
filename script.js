@@ -18,17 +18,21 @@ const $images = [
     document.getElementById('imageGallery').src="images/leaf.jpg",
     document.getElementById('imageGallery').src="images/lightTrail.jpg",
 ];
+const $items = []
 
 //Code
+//reveal details about the image (shot types)
+
+//Showing a larger version of the image
 
 //Run
 
 
 
-for (let i=0; i < $images.length; i++) {
-
-  console.log($images[i]);    
-}
+// for (let i=0; i < $images.length; i++) {
+//   const $images = document.getElementById('imageGallery')
+//   console.log($images[i]);    
+// }
 
 
 //header and footer text
