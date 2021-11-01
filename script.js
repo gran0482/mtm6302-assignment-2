@@ -5,12 +5,12 @@ const $button1 = document.getElementById('button');
 const $button2 = document.getElementById('button2');
 const $hover = document.getElementById('imageGallery');
 const $footer = document.getElementById('footer');
-const $images = ['images/butterfly.jpg', 'images/geese.jpg','images/trail.jpg', 'images/greenCar.jpg', 'images/reflection.jpg', 'images/singleGoose.jpg', 'images/winterPath.jpg', 'images/crystalBall.jpg', 'images/watch.jpg', 'images/tree.jpg', 'images/leaf.jpg', 'images/lightTrail.jpg'];
+const images = ['images/butterfly.jpg', 'images/geese.jpg','images/trail.jpg', 'images/greenCar.jpg', 'images/reflection.jpg', 'images/singleGoose.jpg', 'images/winterPath.jpg', 'images/crystalBall.jpg', 'images/watch.jpg', 'images/tree.jpg', 'images/leaf.jpg', 'images/lightTrail.jpg'];
 
-const animals = ['dog', 'cat', 'mouse']
 
-for (const animal of animals) {
-  console.log(animals)
+
+for (const image of images){
+  console.log(images)
 }
 
 
@@ -42,15 +42,6 @@ $button2.addEventListener('click', function(event){
 })
 
 //Run
-
-
-
-// for (let i=0; i < $images.length; i++) {
-//   // const $images = document.getElementById('imageGallery').innerHTML
-//   const src = document.getElementById('imageGallery');
-
-//   console.log($images[i]);    
-// }
 
 
 
