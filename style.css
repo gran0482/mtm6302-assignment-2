@@ -68,8 +68,20 @@ table {
 	height: 200px;
 	width: 200px;
 	object-fit: cover;
-	padding: 20px 0 20px 35px;
+	padding: 20px 0 25px 50px;
 }
+button#button{
+	margin-left: -204px;
+}
+button#button, button#button2{
+	background-color: #788AA3;
+	color: white;
+	padding: 7px 29px 7px 27.5px;
+	margin-bottom: 10px;
+	font-size: 15px;
+	border: none;
+}
+
 #footer{
 	text-align: center;
 }
