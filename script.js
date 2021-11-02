@@ -5,12 +5,15 @@ const $button1 = document.getElementById('button');
 const $button2 = document.getElementById('button2');
 const $hover = document.getElementById('imageGallery');
 const $footer = document.getElementById('footer');
-const images = ['images/butterfly.jpg', 'images/geese.jpg','images/trail.jpg', 'images/greenCar.jpg', 'images/reflection.jpg', 'images/singleGoose.jpg', 'images/winterPath.jpg', 'images/crystalBall.jpg', 'images/watch.jpg', 'images/tree.jpg', 'images/leaf.jpg', 'images/lightTrail.jpg'];
+const $images = ['images/butterfly.jpg', 'images/geese.jpg','images/trail.jpg', 'images/greenCar.jpg', 'images/reflection.jpg', 'images/singleGoose.jpg', 'images/winterPath.jpg', 'images/crystalBall.jpg', 'images/watch.jpg', 'images/tree.jpg', 'images/leaf.jpg', 'images/lightTrail.jpg'];
 
 
+for (const image of $images){
 
-for (const image of images){
-  console.log(images)
+  const img = document.querySelector('img');
+  img.src = 'images/butterfly.jpg'
+
+  console.log($images)
 }
 
 
@@ -20,6 +23,8 @@ for (const image of images){
 $hover.addEventListener('mouseover', function(){
   $hover.setAttribute(
     'style', 'background-color: red'
+    // Macro, Wildlife, leading lines, automotive, Nature reflection, wildlife (2), seasonal, mirror reflection, product, Nature reflection(2), Nature, long exposure
+    
   )
 })
 
@@ -42,7 +47,6 @@ $button2.addEventListener('click', function(event){
 })
 
 //Run
-
 
 
 //header and footer text
