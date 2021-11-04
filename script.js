@@ -13,8 +13,9 @@ for (const image of $images){
   const img = document.querySelector('img');
   img.src = 'images/butterfly.jpg'
 
-  console.log($images)
 }
+
+console.log($images)
 
 
 
