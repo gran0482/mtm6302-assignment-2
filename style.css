@@ -81,6 +81,10 @@ button#button, button#button2{
 	font-size: 15px;
 	border: none;
 }
+button#button:hover
+, button#button2:hover{
+	background-color: #23395d;
+}
 
 #footer{
 	text-align: center;
