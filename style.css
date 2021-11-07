@@ -64,7 +64,7 @@ table {
 #container{
 	background-color: #F5F5F5;
 }
-#imageGallery{
+img{
 	height: 200px;
 	width: 200px;
 	object-fit: cover;
@@ -89,3 +89,29 @@ button#button:hover
 #footer{
 	text-align: center;
 }
+/* #container{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	grid-gap: 10px;
+  }
+  
+/* tablet */
+/* @media only screen and (min-width: 768px) and (max-width: 1024px) {
+ #container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px;
+} 
+}    */
+
+/* desktop */
+/* @media only screen and (min-width: 1025px) and (max-width: 2200px) {
+  #container{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-gap: 10px;
+  } 
+}    */
