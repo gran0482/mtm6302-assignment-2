@@ -1,71 +1,55 @@
 //Data
 const $header = document.getElementById('header');
 const $container = document.getElementById('container');
-const $button1 = document.getElementById('button');
-const $button2 = document.getElementById('button2');
 const $footer = document.getElementById('footer');
-const $hover = document.getElementById('imageGallery');
 const $images = ['images/butterfly.jpg', 'images/geese.jpg','images/trail.jpg', 'images/greenCar.jpg', 'images/reflection.jpg', 'images/singleGoose.jpg', 'images/winterPath.jpg', 'images/crystalBall.jpg', 'images/watch.jpg', 'images/tree.jpg', 'images/leaf.jpg', 'images/lightTrail.jpg'];
-const $shotTypes = ['Macro', 'Wildlife', 'leading lines', 'automotive', 'Nature reflection', 'wildlife', 'seasonal', 'mirror reflection', 'product', 'Nature reflection', 'Nature', 'long exposure'];
+const $shotTypes = ['Macro', 'Wildlife', 'Leading Lines', 'Automotive', 'Nature Reflection', 'Wildlife', 'Seasonal', 'Mirror Reflection', 'Product', 'Nature Reflection', 'Nature', 'Long Exposure'];
 
 //Code
 
-let text = '';
-for (const image of $images){
 
-  text += '<img src="' + image + '" alt=""></img>';
-  
-  console.log(image)
+//Run
+let text = '';
+for (let i=0; i < $images.length; i++) {
+  text += '<div>'
+  text += '<img src="' + $images[i] + '"></img>';
+  text += '<button class="button" data-additionalinfo="' + $shotTypes[i] + '">View Details</button>';
+  text += '</div>'
+
+  console.log($images[i]);
+  console.log($shotTypes[i])
 }
 document.getElementById('container').innerHTML = text;
 
-//reveal details about the image on hover(shot types)
+// Revealing more details of the image
+const container = document.querySelectorAll('.button')
 
-// Macro, Wildlife, leading lines, automotive, Nature reflection, wildlife, seasonal, mirror reflection, product, Nature reflection, Nature, long exposure
+for (const button of container){
+  button.addEventListener('click', popUp)
+}
 
-$hover.addEventListener('mouseover', function(){
-  $hover.setAttribute('style', `
-    background-color: red; 
-    display: block;
-  ` 
-  )
-})
+function popUp (e){
+  const button = e.target
+  alert (button.dataset.additionalinfo);
+}
 
-$hover.addEventListener('mouseout', function (){
-  $hover.setAttribute('style', `
-    background-color: #F5F5F5
-    display: none;
-    `
-  )
-})
+//Adding a border around the image
+const images = document.querySelectorAll('img')
 
-// https://stackoverflow.com/questions/3559467/description-box-using-onmouseover
+for (const img of images){
+  img.addEventListener('mouseover', borderColor)
+}
 
-
-//Showing a larger version of the image
-img = document.getElementById('imageGallery')
-
-$button1.addEventListener('click', function(event){
-  img.style.transform = "scale(1.5)"
-  img.style.transition = "transform 0.5s ease-in-out";
-
-  console.log('button is working')
-})
-
-$button2.addEventListener('click', function(event){
-  img.style.transform = "scale(1)"
-  img.style.transition = "transform 0.5s ease-in-out";
-
-  console.log('button 2 is working')
-})
-
-//using https://www.geeksforgeeks.org/how-to-make-the-images-bigger-when-clicked/ as a resource to help with displaying a larger version of the image
-
-
-//Run
-
+function borderColor (e){
+  const img = e.target
+  e.target.style.border="5px solid blue";
+  setTimeout(function(){
+    e.target.style.border = "";
+  }, 500);
+}
 
 //header and footer text
 $header.innerHTML = 'Image Gallery';
 $footer.innerHTML += '&copy 2021 Ben Grant';
+
 
