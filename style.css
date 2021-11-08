@@ -68,50 +68,47 @@ img{
 	height: 200px;
 	width: 200px;
 	object-fit: cover;
-	padding: 20px 0 25px 50px;
+	margin-top: 10px;
+	margin-left: 25px;
 }
-button#button{
-	margin-left: -204px;
-}
-button#button, button#button2{
-	background-color: #788AA3;
-	color: white;
-	padding: 7px 29px 7px 27.5px;
-	margin-bottom: 10px;
-	font-size: 15px;
-	border: none;
-}
-button#button:hover
-, button#button2:hover{
+.button{
 	background-color: #23395d;
+	color: white;
+	border: none;
+	width: 200px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin: 0 15px 15px 25px;
 }
-
+.button:hover{
+	background-color: #788AA3;
+	color: black;
+}
 #footer{
 	text-align: center;
 }
-/* #container{
+/* mobile */
+ #container{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(6, 1fr);
-	grid-gap: 10px;
   }
   
 /* tablet */
-/* @media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
  #container{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 } 
-}    */
+}   
 
 /* desktop */
-/* @media only screen and (min-width: 1025px) and (max-width: 2200px) {
+@media only screen and (min-width: 1025px) and (max-width: 2200px) {
   #container{
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: repeat(2, 1fr);
 	grid-gap: 10px;
   } 
-}    */
+}   

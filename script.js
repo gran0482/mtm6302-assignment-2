@@ -3,7 +3,7 @@ const $header = document.getElementById('header');
 const $container = document.getElementById('container');
 const $footer = document.getElementById('footer');
 const $images = ['images/butterfly.jpg', 'images/geese.jpg','images/trail.jpg', 'images/greenCar.jpg', 'images/reflection.jpg', 'images/singleGoose.jpg', 'images/winterPath.jpg', 'images/crystalBall.jpg', 'images/watch.jpg', 'images/tree.jpg', 'images/leaf.jpg', 'images/lightTrail.jpg'];
-const $shotTypes = ['Macro', 'Wildlife', 'Leading Lines', 'Automotive', 'Nature Reflection', 'Wildlife', 'Seasonal', 'Mirror Reflection', 'Product', 'Nature Reflection', 'Nature', 'Long Exposure'];
+const $shotTypes = ['Macro Photograph', 'Wildlife Photograph', 'Leading Lines Photograph', 'Automotive Photograph', 'Nature Reflection Photograph', 'Wildlife Photograph', 'Seasonal Photograph', 'Mirror Reflection Photograph', 'Product Photograph', 'Nature Reflection Photograph', 'Nature Photograph', 'Long Exposure Photograph'];
 
 //Code
 
@@ -11,7 +11,7 @@ const $shotTypes = ['Macro', 'Wildlife', 'Leading Lines', 'Automotive', 'Nature 
 //Run
 let text = '';
 for (let i=0; i < $images.length; i++) {
-  text += '<div>'
+  text += '<div class=imageContainer>'
   text += '<img src="' + $images[i] + '"></img>';
   text += '<button class="button" data-additionalinfo="' + $shotTypes[i] + '">View Details</button>';
   text += '</div>'
