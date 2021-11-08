@@ -2,7 +2,7 @@
 const $header = document.getElementById('header');
 const $container = document.getElementById('container');
 const $footer = document.getElementById('footer');
-const $images = ['images/butterfly.jpg', 'images/geese.jpg','images/trail.jpg', 'images/greenCar.jpg', 'images/reflection.jpg', 'images/singleGoose.jpg', 'images/winterPath.jpg', 'images/crystalBall.jpg', 'images/watch.jpg', 'images/tree.jpg', 'images/leaf.jpg', 'images/lightTrail.jpg'];
+const $images = ['images/butterfly.jpg', 'images/geese.jpg','images/trail.jpg', 'images/greenCar.jpg', 'images/reflection.jpg', 'images/singleGoose.jpg', 'images/winterPath.jpg', 'images/crystalBall.jpg', 'images/watch.jpg', 'images/tree.jpg', 'images/mapleLeaf.jpg', 'images/lightTrail.jpg'];
 const $shotTypes = ['Macro Photograph', 'Wildlife Photograph', 'Leading Lines Photograph', 'Automotive Photograph', 'Nature Reflection Photograph', 'Wildlife Photograph', 'Seasonal Photograph', 'Mirror Reflection Photograph', 'Product Photograph', 'Nature Reflection Photograph', 'Nature Photograph', 'Long Exposure Photograph'];
 
 //Code
